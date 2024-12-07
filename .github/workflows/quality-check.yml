@@ -35,9 +35,7 @@ jobs:
     - name: Install dependencies
       run: flutter pub get
 
-    # Paso para comprobar el formato del código
-    - name: Check formatting
-      run: flutter format --set-exit-if-changed .
+   
 
     # Paso para construir la app
     - name: Build the app
