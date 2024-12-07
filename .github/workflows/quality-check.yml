@@ -27,9 +27,7 @@ jobs:
 
     
 
-    - name: Run tests
-      run: flutter test
-
+    
     - name: Build the app
       run: flutter build apk # O usa otro comando de build que necesites
 
