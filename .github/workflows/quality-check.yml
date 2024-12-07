@@ -18,12 +18,12 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    # Paso para configurar JDK 17 (cambio adoptopenjdk a adoptium)
+    # Paso para configurar JDK 17 usando 'temurin'
     - name: Set up JDK 17
       uses: actions/setup-java@v2
       with:
         java-version: '17'
-        distribution: 'adoptium'  # Aquí cambiamos adoptopenjdk por adoptium
+        distribution: 'temurin'  # Usamos 'temurin' para JDK 17 de Adoptium
 
     # Paso para configurar Flutter
     - name: Set up Flutter
