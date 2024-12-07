@@ -13,7 +13,7 @@ class _CotizacionUsuarioState extends State<CotizacionUsuario> {
   final TextEditingController _personasController = TextEditingController();
   final TextEditingController _motivoController = TextEditingController();
   final TextEditingController _presupuestoController = TextEditingController();
-  final CotizacionRepository _repository = CotizacionRepository();
+  final CotizacionRepository _repository = CotizacionRepository(apiKey: 'APIKEY');
   Future<List<Map<String, dynamic>>>? _resultados;
 
   void _generarCotizacion() {
